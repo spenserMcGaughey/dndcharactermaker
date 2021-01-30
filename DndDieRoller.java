@@ -35,20 +35,27 @@ public class DndDieRoller {
 		return rollValue;
 	}
 	
-	public int advantage(int numRolls) {
+	public int advantage() {
 		
-		roll(numRolls);
+		roll(2);
 		rollValue = rollValue-values[0];
 		
 		return rollValue;
 	}
 	
-	public int disadvantage(int numRolls) {
+	public int disadvantage() {
 		
-	roll(numRolls);
-	rollValue = rollValue-values[dieSides-1];
+	roll(2);
+	rollValue = rollValue-values[1];
 	
 	return rollValue;
+	}
+	
+	public int statRoll() {
+		roll(4);
+		rollValue = rollValue-values[3];
+		
+		return rollValue;
 	}
 	
 	public int getDieSides() {
