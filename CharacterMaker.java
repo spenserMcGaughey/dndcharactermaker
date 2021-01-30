@@ -74,7 +74,7 @@ public class CharacterMaker {
 				
 				for(int i=0; i<6;i++) {
 					DndDieRoller dSix = new DndDieRoller(6);
-					scores[i]=dSix.advantage(4);
+					scores[i]=dSix.statRoller();
 				}
 				System.out.println("Here are your scores: ");
 				for(int i=0; i<6;i++) {
